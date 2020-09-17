@@ -1,0 +1,6 @@
+Exercise -----------------------------------------------
+Perform Following actions with Terraform:
+Create Docker Network named as “dev”.
+Start a container with image “docker.io/jpetazzo/trainingwheels" exposing port      5000 -> 5000 in Docker network “dev” having container name “web”.
+Start another container with image “docker.io/redis" in Docker network “dev” with container name “redis”.
+Result: http://IPofDockerHost:5000/Exercise -----------------------------------------------

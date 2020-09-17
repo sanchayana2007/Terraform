@@ -1,0 +1,2 @@
+exercise: Create an AWS EC2 instance using terraform variables defined in variable.tf, having output Url/IP and Port and running Web Server.
+Do set inbound/outbound rules for same.

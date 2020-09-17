@@ -1,0 +1,10 @@
+ 2028  export TF_ADMIN=sanchayana2007@gmail.com
+ 2029  gcloud iam service-accounts keys create ${TF_CREDS}  --iam-account terraform@${TF_ADMIN}.iam.gserviceaccount.com
+ 2030  clear
+ 2031  gcloud iam service-accounts keys create ${TF_CREDS}  --iam-account terraform@${TF_ADMIN}.iam.gserviceaccount.com
+ 2032  export TF_ADMIN=seismic-elf-261104
+ 2033  gcloud iam service-accounts keys create ${TF_CREDS}  --iam-account terraform@${TF_ADMIN}.iam.gserviceaccount.com
+ 2034  gcloud projects add-iam-policy-binding ${TF_ADMIN}   --member serviceAccount:terraform@${TF_ADMIN}.iam.gserviceaccount.com \
+ 2035  gcloud projects add-iam-policy-binding ${TF_ADMIN}   --member serviceAccount:terraform@${TF_ADMIN}.iam.gserviceaccount.com  --role roles/viewer
+ 2036  history | tail 15 > 1
+ 2037  history | tail  > 1

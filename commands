@@ -1,0 +1,22 @@
+# 
+
+terrform init
+
+#validate the .tf files  
+terrform validate 
+
+#Save the plan 
+terrform plan -out=./plan_name
+
+#appl teh changes to deploy 
+terrform apply  
+
+#apply teh plan dosent ask for confirmation 
+terrform apply ./plan 
+
+#appl teh changes to deploy 
+terraform apply   --auto-approve  
+#delete all that is deployed and maintain teh old stage 
+terrform destroy --auto-approve
+
+

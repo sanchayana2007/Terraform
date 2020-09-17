@@ -1,0 +1,6 @@
+#this is like copying the state file from an existing instance state 
+#so this is importing all code
+#make sure taht sher is no tfstate file in the local dir 
+#Thisis like downloading the infra 
+#
+terraform import aws_instance.test i-0ceb7ed586563aa9f 
