@@ -1,5 +1,5 @@
-clientid = "601517272399-vovid0vvaoqe31n7bsoio4l0mclrbelm.apps.googleusercontent.com"
-webserver = "f0319bc02fcda18e1p-tp"
+clientid = "850217964271-0uv8go5cfunsokkkk6grojdudrp52g9n.apps.googleusercontent.com"
+webserver = "c46c5911b9618faacp-tp"
 from google.auth.transport.requests import Request
 from google.oauth2 import id_token
 import requests
@@ -29,7 +29,7 @@ def trigger_dag(data, context=None):
     # {tenant-project-id}.appspot.com
     webserver_id = webserver 
     # The name of the DAG you wish to trigger
-    dag_name = 'composer_sample_trigger_response_dag'
+    dag_name = 'Run-dataflow_BQ'
     webserver_url = (
         'https://'
         + webserver_id

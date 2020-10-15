@@ -9,16 +9,15 @@ import json
 
 
 SCOPES = ['https://www.googleapis.com/auth/cloud-platform']
-SERVICE_ACCOUNT_FILE = '../seismic-elf-261104-c47aa69e86d6.json'
-project_id = 'seismic-elf-261104'
+SERVICE_ACCOUNT_FILE = '../compose-test-291802-1f8ba3535e89.json'
+project_id = 'compose-test-291802'
 location = 'us-central1'
-composer_environment = 'sanch-composer'
+composer_environment = 'sanch-composer2'
 
 
 credentials = service_account.Credentials.from_service_account_file(SERVICE_ACCOUNT_FILE, scopes=SCOPES)
 # Authenticate with Google Cloud.Airflow + Docker + Kubernetes (Scalable and painless data pipeline)
 # See: https://cloud.google.com/docs/authentication/getting-started
-#credentials = service_account.Credentials.from_service_account_file('../seismic-elf-261104-c47aa69e86d6.json')
 #scoped_credentials = credentials.with_scopes(['https://www.googleapis.com/auth/cloud-platform'])
 
 

@@ -1,7 +1,7 @@
 # GCP authentication file
 variable "gcp_auth_file" {
   type        = string
-  default     = "../seismic-elf-261104-c47aa69e86d6.json"
+  default     = "../compose-test-291802-1f8ba3535e89.json"
   description = "GCP authentication file"
 }
 # define GCP region
@@ -13,7 +13,7 @@ variable "gcp_region" {
 # define GCP project name
 variable "gcp_project" {
   type        = string
-  default = "seismic-elf-261104"
+  default = "compose-test-291802"
    description = "GCP project name"
 }
 
@@ -30,3 +30,5 @@ variable "service" {
   default = "compute.googleapis.com" 
   description = "GCP zone"
 }
+
+
