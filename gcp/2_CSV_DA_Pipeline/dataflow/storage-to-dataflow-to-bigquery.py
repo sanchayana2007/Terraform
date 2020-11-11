@@ -19,7 +19,7 @@ class DataIngestion:
 
     def parse_method(self, string_input):
         # Strip out return characters and quote characters.
-        values = re.split(";",
+        values = re.split(",",
                           re.sub('\r\n', '', re.sub(u'"', '', string_input)))
 
         row = dict( zip(('load_timestamp', 'ip', 'visit_id', 'device_type', 'url_location', 'page_type', 'search_query', 'product_id', 'site_department_id', 'product_unit_price', 'freight_delivery_time', 'freight_value', 'cart_qty', 'cart_total_value'),

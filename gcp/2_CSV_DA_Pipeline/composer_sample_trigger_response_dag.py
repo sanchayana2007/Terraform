@@ -35,7 +35,7 @@ DEFAULT_DAG_ARGS = {
     'email': 'sanchayana2007@gmail.com',
     'email_on_failure': True,
     'email_on_retry': True,
-    'retries': 1,
+    'retries': 0,
     'project_id': 'compose-test-291802',
     'dataflow_default_options': {
         'project': 'compose-test-291802',
@@ -93,7 +93,7 @@ with models.DAG(dag_id='Run-dataflow_BQ',
 		'project': 'compose-test-291802',
 		'job_name': 'job-name-001',
 		'temp_location': 'gs://sanch-test-bucket12/tmp/',
-		'staging_location': 'gs://sanch-test-bucket12/',
+		'staging_location': 'gs://sanch-test-bucket12/stg',
         'load_dt': DS_TAG
     }
 
