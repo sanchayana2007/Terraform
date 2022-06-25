@@ -1,0 +1,25 @@
+apiVersion: networking.istio.io/v1alpha3
+kind: Gateway
+metadata:
+  name: main-gateway
+  namespace: ${namespace}
+spec:
+  selector:
+    # use Istio default gateway implementation
+    app: istio-ingressgateway
+    istio: ingressgateway
+  servers:
+  - port:
+      number: 80
+      name: http
+      protocol: HTTP
+    hosts: ${gateway_hosts}
+  - port:
+      number: 443
+      name: https
+      protocol: HTTPS
+    tls:
+      mode: SIMPLE
+      credentialName: ${gateway_credentialName} # This should match the Certificate secretName
+    hosts:
+    - "*" # This should match a DNS name in the Certificate
